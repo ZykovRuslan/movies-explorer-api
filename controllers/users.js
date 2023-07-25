@@ -73,6 +73,8 @@ const updateUserById = (req, res, next) => {
     .catch((error) => {
       if (error.name === 'ValidationError') {
         next(new ValidationError(`Пожалуйста, проверьте правильность заполнения полей: ${Object.values(error.errors).map((err) => `${err.message.slice(5)}`).join(' ')}`));
+      } else if (error.code === 11000) {
+        next(new ConflictError('Пользователь с таким email существует'));
       } else {
         next(error);
       }
