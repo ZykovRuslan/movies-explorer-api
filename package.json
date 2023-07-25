@@ -1,0 +1,35 @@
+{
+  "name": "movies-explorer-api",
+  "version": "1.0.0",
+  "description": "Дипломный проект - бэкенд",
+  "main": "app.js",
+  "scripts": {
+    "lint": "npx eslint .",
+    "dev": "cross-env NODE_ENV=production nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "Ruslan Zykov",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.8.0",
+    "express-winston": "^4.2.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.0",
+    "path": "^0.12.7",
+    "validator": "^13.9.0",
+    "winston": "^3.10.0"
+  }
+}
