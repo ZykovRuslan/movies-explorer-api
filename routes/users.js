@@ -5,15 +5,7 @@ const {
   updateUserById,
 } = require('../controllers/users');
 
-router.get(
-  '/me',
-  celebrate({
-    params: Joi.object().keys({
-      userId: Joi.string().alphanum().length(24).hex(),
-    }),
-  }),
-  getCurrentUser,
-);
+router.get('/me', getCurrentUser);
 
 router.patch(
   '/me',

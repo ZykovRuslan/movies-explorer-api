@@ -7,7 +7,6 @@ const cors = require('cors');
 const routes = require('./routes');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const handleError = require('./middlewares/handleError');
-const NotFoundError = require('./errors/NotFoundError');
 
 const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/bitfilmsdb' } = process.env;
 
@@ -37,10 +36,6 @@ app.use(limiter);
 app.use(cors({ origin: true, credentials: true }));
 
 app.use(routes);
-
-app.use('*', (req, res, next) => {
-  next(new NotFoundError('Маршрут не найден'));
-});
 
 app.use(errorLogger);
 app.use(errors());

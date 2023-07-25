@@ -4,8 +4,8 @@ const { login, createUser } = require('../controllers/users');
 const auth = require('../middlewares/auth');
 const userRoutes = require('./users');
 const movieRoutes = require('./movies');
+const NotFoundError = require('../errors/NotFoundError');
 
-// роуты, не требующие авторизации
 router.post(
   '/signin',
   celebrate({
@@ -28,6 +28,10 @@ router.post(
   }),
   createUser,
 );
+
+router.use('*', auth, (req, res, next) => {
+  next(new NotFoundError('Маршрут не найден'));
+});
 
 router.use('/users', auth, userRoutes);
 router.use('/movies', auth, movieRoutes);
