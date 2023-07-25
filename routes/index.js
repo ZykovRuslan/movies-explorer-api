@@ -29,11 +29,11 @@ router.post(
   createUser,
 );
 
+router.use('/users', auth, userRoutes);
+router.use('/movies', auth, movieRoutes);
+
 router.use('*', auth, (req, res, next) => {
   next(new NotFoundError('Маршрут не найден'));
 });
-
-router.use('/users', auth, userRoutes);
-router.use('/movies', auth, movieRoutes);
 
 module.exports = router;
