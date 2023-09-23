@@ -72,8 +72,6 @@
 
 Вы можете посмотреть проект в действии, перейдя по следующей ссылке: 🔗 [Movies explorer api demo](movies-explorer-ruslan.nomoreparties.co) 🌟
 
----
-
 ## Для связи
   <a href="https://linkedin.com/in/ruslan-zykov/">
     <img src="https://img.shields.io/badge/Linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" width="120"/>
