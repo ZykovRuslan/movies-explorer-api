@@ -50,55 +50,55 @@
 Для всех запросов к нашему бэкенду используйте следующий базовый URL: 🔗 https://movies-explorer-api.nomoredomains.xyz
 
 #### Регистрация
-POST https://movies-explorer-api.nomoredomains.xyz/signup
-Заполнить обязательные поля:
-{
-    "name": "TestName",
-    "email": "TestName@mail.ru",
-    "password": "TestName"
-}
+POST https://movies-explorer-api.nomoredomains.xyz/signup  
+Заполнить обязательные поля:  
+{  
+    "name": "TestName",  
+    "email": "TestName@mail.ru",  
+    "password": "TestName"  
+}  
 
 #### Авторизация
-POST https://movies-explorer-api.nomoredomains.xyz/signin
-Заполнить обязательные поля:
-{
-    "email": "TestName@mail.ru",
-    "password": "TestName"
-}
+POST https://movies-explorer-api.nomoredomains.xyz/signin  
+Заполнить обязательные поля:  
+{  
+    "email": "TestName@mail.ru",  
+    "password": "TestName"  
+}  
 
 #### Текущий пользователь 
-GET https://movies-explorer-api.nomoredomains.xyz/users/me
+GET https://movies-explorer-api.nomoredomains.xyz/users/me  
 
 #### Изменить данные пользователя
-POST https://movies-explorer-api.nomoredomains.xyz/users/me
-Заполнить обязательные поля:
-{
-    "name": "TestName",
-    "email": "TestName@mail.ru"
-}
+POST https://movies-explorer-api.nomoredomains.xyz/users/me  
+Заполнить обязательные поля:  
+{  
+    "name": "TestName",  
+    "email": "TestName@mail.ru"  
+}  
 
 #### Получить сохраненные фильмы
-GET https://movies-explorer-api.nomoredomains.xyz/movies
+GET https://movies-explorer-api.nomoredomains.xyz/movies  
 
 #### Добавить сохраненный фильм
-POST https://movies-explorer-api.nomoredomains.xyz/movies
-Заполнить обязательные поля:
-{
-    "country": "TestCountry",
-    "director": "TestDirector",
-    "duration": "TestDuration",
-    "year": "TestYear",
-    "description": "TestDescription",
-    "image": "https://avatars.mds.yandex.net/i?id=6eee69d0abc5f1ddbbd9246eaffe3a4df5ef3116-8497538-images-thumbs&n=13",
-    "trailerLink": "https://avatars.mds.yandex.net/i?id=6eee69d0abc5f1ddbbd9246eaffe3a4df5ef3116-8497538-images-thumbs&n=13",
-    "thumbnail": "https://avatars.mds.yandex.net/i?id=6eee69d0abc5f1ddbbd9246eaffe3a4df5ef3116-8497538-images-thumbs&n=13",
-    "movieId": "TestMovieId",
-    "nameRU": "TestNameRU",
-    "nameEN": "TestNameEN"
-}
+POST https://movies-explorer-api.nomoredomains.xyz/movies  
+Заполнить обязательные поля:  
+{  
+    "country": "TestCountry",  
+    "director": "TestDirector",  
+    "duration": "TestDuration",  
+    "year": "TestYear",  
+    "description": "TestDescription",  
+    "image": "https://avatars.mds.yandex.net/i?id=6eee69d0abc5f1ddbbd9246eaffe3a4df5ef3116-8497538-images-thumbs&n=13",  
+    "trailerLink": "https://avatars.mds.yandex.net/i?id=6eee69d0abc5f1ddbbd9246eaffe3a4df5ef3116-8497538-images-thumbs&n=13",  
+    "thumbnail": "https://avatars.mds.yandex.net/i?id=6eee69d0abc5f1ddbbd9246eaffe3a4df5ef3116-8497538-images-thumbs&n=13",  
+    "movieId": "TestMovieId",  
+    "nameRU": "TestNameRU",  
+    "nameEN": "TestNameEN"  
+}  
 
 #### Удалить сохраненный фильм
-DELETE https://movies-explorer-api.nomoredomains.xyz/movies/:id
+DELETE https://movies-explorer-api.nomoredomains.xyz/movies/:id  
 
 ## Для связи
   <a href="https://linkedin.com/in/ruslan-zykov/">
