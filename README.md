@@ -1,4 +1,4 @@
-<h1 align="center">Movies explorer api</h1>
+<h1>Movies explorer api</h1>
 
 Проект Movies explorer - это интерактивный веб-сайт, разработанный с использованием технологий React и JavaScript. Это веб-сайт портфолио предназначен для поиска и сохранения интересных фильмов. 
 
