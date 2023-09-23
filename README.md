@@ -1,6 +1,6 @@
 <h1 align="center">Movies explorer</h1>
 <p align="center">
-  <img src="" alt="здесь будет банер">
+  <img src="https://i.postimg.cc/P55d1ZNj/2023-09-23-21-24-07.png" alt="банер проекта">
 </p>
 
 Проект Movies explorer - это интерактивный веб-сайт, разработанный с использованием технологий React и JavaScript. Это веб-сайт портфолио предназначен для поиска и сохранения интересных фильмов. 
